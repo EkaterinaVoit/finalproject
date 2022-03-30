@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<article class = "main">
+  <style>
+    p {
+      color: black;
+      margin-top: 270px;
+      margin-left: 80px;
+      text-align: left;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 28px;
+    }
+    </style>
+  <p>На этом сайте будет доступен график совместной встречаемости полнозначных слов 
+    из итальянского новостного портала <bold>La Nazione</bold>.</p>
+  </article>
+  
+  <div class = "center">
+    <img class="center" src="{{url_for('static', filename='Italia_Bandiera.png')}}" width="300px">
+  </div>
+{% endblock %}
